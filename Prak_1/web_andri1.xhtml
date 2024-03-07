@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="description" content="Ini adalah menu input biodata" />
+    <title>web1</title>
+</head>
+<body>
+    <form name="formSatu">
+        <fieldset>
+            <legend><b><font color="blue">Data Input</font></b></legend>
+            <table border="0" cellspacing="2" bgcolor="blue">
+                <tr>
+                    <td bgcolor="white">NIM:</td>
+                    <td>
+                        <input type="text" name="id" />
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">Nama:</td> 
+                    <td><input type="text" name="nama" />
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">Alamat:</td> 
+                    <td><input type="text" name="alamat" />
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">Jenis Kelamin:</td> 
+                    <td><select name="sex">
+                        <option value="perempuan">perempuan</option>
+                        <option value="laki-laki">laki-laki</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">Agama:</td>
+                    <td bgcolor="blue">
+                        <input type="radio" name="ag01" value="Islam" /><font color="white"><b>Islam</b></font>
+                        <input type="radio" name="ag01" value="Protestan" /><font color="white"><b>Protestan</b></font>
+                        <input type="radio" name="ag01" value="Katolik" /><font color="white"><b>Katolik</b></font>
+                        <input type="radio" name="ag01" value="Buddha" /><font color="white"><b>Buddha</b></font>
+                        <input type="radio" name="ag01" value="Hindu" /><font color="white"><b>Hindu</b></font>
+                        <input type="radio" name="ag01" value="Konghucu" /><font color="white"><b>Konghucu</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">Status:</td>
+                    <td bgcolor="blue">
+                        <input type="radio" name="st" value="Single" /><font color="white"><b>Single</b></font>
+                        <input type="radio" name="st" value="Relationship" /><font color="white"><b>Relationship</b></font>
+                        <input type="radio" name="st" value="Complicated" /><font color="white"><b>Complicated</b></font>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="button" value="Save" /></td>
+                    <td><input type="button" value="Edit" /></td>
+                    <td><input type="button" value="Delete" name="hapus" /></td>
+                    <td><input type="button" value="Reset" /></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
