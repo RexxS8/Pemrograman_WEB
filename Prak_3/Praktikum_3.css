@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/originals/47/f0/c4/47f0c4a2b23b66e6ec3ba9fda69dcd5f.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding : 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    max-width: 90%;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type-text], input[type-email], input[type-password] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: hsl(0, 72%, 65%);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45A049;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
