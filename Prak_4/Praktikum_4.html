@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" type="text/css" href="Praktikum_4.css">
+</head>
+<body>
+<form id="registrationForm">
+    <h2>Daftar Akun Baru</h2>
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="password">Kata Sandi (minimal 6 karakter):</label>
+    <input type="password" id="password" name="password">
+    <label for="confirmPassword">Konfirmasi Kata Sandi:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+    
+    <button type="submit">Daftar</button>
+</form>
+
+<div id="implementasiInfo" style="display: none;">
+    <h2>Informasi Implementasi</h2>
+    <label for="displayHardwareDescription">Deskripsi Perangkat Keras:</label>
+    <textarea id="displayHardwareDescription" name="displayHardwareDescription"></textarea>
+    <label for="displayPartiesInvolved">Deskripsi Para Pihak yang Terlibat:</label>
+    <textarea id="displayPartiesInvolved" name="displayPartiesInvolved"></textarea>
+    <label for="displayActivityDescription">Deskripsi Aktivitas yang Akan Dilaksanakan:</label>
+    <textarea id="displayActivityDescription" name="displayActivityDescription"></textarea>
+    <label for="displayStartDate">Tanggal Mulai Implementasi:</label>
+    <input type="date" id="displayStartDate" name="displayStartDate">
+    <label for="displayEndDate">Tanggal Selesai Implementasi:</label>
+    <input type="date" id="displayEndDate" name="displayEndDate">
+    <label for="displayImplementationStatus">Status Penyelesaian Implementasi:</label>
+    <select id="displayImplementationStatus" name="displayImplementationStatus">
+        <option value="selesai">Selesai</option>
+        <option value="berlangsung">Berlangsung</option>
+        <option value="gagal">Gagal</option>
+    </select>
+    <label for="displayFinalNotes">Catatan Akhir Kegiatan:</label>
+    <textarea id="displayFinalNotes" name="displayFinalNotes"></textarea>
+    <label for="displayRecordTime">Waktu Perekaman:</label>
+    <input type="text" id="displayRecordTime" name="displayRecordTime" readonly>
+    <label for="displayLastUpdated">Waktu Update Informasi Terakhir:</label>
+    <input type="text" id="displayLastUpdated" name="displayLastUpdated" readonly>
+    <button id="submitImplementationInfo" type="button">Submit Informasi Implementasi</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="Praktikum_4.js"></script>
+</body>
+</html>
