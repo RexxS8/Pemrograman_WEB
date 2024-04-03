@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#hero-image">Home</a></li>
+                    <li><a href="#implementasiInfo">IS Implementation</a></li>
+                    <li><a href="#header nav ul li a">Transaction Data</a></li>
+                    <li><a href="#header nav ul li a">Environment Data</a></li>
+                    <li><a href="#header nav ul li a">Maintenance</a></li>
+                    <li><a href="#header nav ul li a">Performance Monitoring</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+    <div id="hero-image">
+        <div class="wrapper">
+            <h2><strong>Implementation System</strong><br/>
+                Application</h2>
+            <a href="#" id="getStartedButton" class="button-1">Get Started</a>
+        </div>
+    </div>
+
+    <div id="implementasiInfo" style="display: none;">
+        <h4><b> New Project </b></h4>
+        <div class="form-container">
+            <div class="form-box">
+                <div class="form-group">
+                    <label for="Project">Project Name:</label>
+                    <textarea id="Project" name="Project"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Hardware">Hardware:</label>
+                    <textarea id="Hardware" name="Hardware"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Activity">Activity:</label>
+                    <textarea id="Activity" name="Activity"></textarea>
+                </div>
+            </div>
+            <div class="form-box">
+                <div class="form-group">
+                    <label for="Stakeholder">Stakeholder:</label>
+                    <select id="Stakeholder" name="Stakeholder">
+                        <option value="Pemilik">Pemilik</option>
+                        <option value="Implementator">Implementator</option>
+                        <option value="Integrator">Integrator</option>
+                        <option value="Pengguna">Pengguna</option>
+                        <option value="Regulator">Regulator</option>
+                        <option value="Trainer">Trainer</option>
+                        <option value="Technical Help Desk">Technical Help Desk</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Date">Date:</label>
+                    <input type="date" id="Date" name="Date">
+                </div>
+                <div class="form-group">
+                    <label for="Status">Status:</label>
+                    <select id="Status" name="Status">
+                        <option value="selesai">Selesai</option>
+                        <option value="berlangsung">Berlangsung</option>
+                        <option value="gagal">Gagal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Notes">Notes:</label>
+                    <textarea id="Notes" name="Notes"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button id="submitImplementationInfo" type="button">Submit Information</button>
+        </div>
+    </div>
+    
+
+    <!-- Tabel untuk menampilkan informasi implementasi -->
+    <div class="table-wrapper" style="display: none;">
+        <div class="table-box">
+            <input type="text" id="searchInput" placeholder="Search for Project">
+            <button id="searchButton">Search</button>
+            <table id="implementationTable">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Hardware</th>
+                        <th>Stakeholder</th>
+                        <th>Activity</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="implementationTableBody">
+                <!-- Isi tabel akan ditambahkan melalui JavaScript -->
+                </tbody>
+            </table>
+            <!-- Tambahkan baris untuk menampilkan pesan jika tidak ada hasil pencarian -->
+            <div id="noResultRow" style="display: none;">
+                <p>No project found matching the search criteria.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
