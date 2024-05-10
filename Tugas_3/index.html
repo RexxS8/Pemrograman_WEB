@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiket Buyer's Information</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+<h2>Tiket Buyer's Information</h2>
+
+<form action="#" method="post" id="buyerForm">
+
+  <label for="firstname">First Name:<span style="color:red">*</span></label><br>
+  <input type="text" id="firstname" name="First Name" required><br><br>
+
+  <label for="lastname">Last Name:<span style="color:red">*</span></label><br>
+  <input type="text" id="lastname" name="Last Name" required><br><br>
+
+  <label for="street">Street:<span style="color:red">*</span></label><br>
+  <input type="text" id="street" name="Street" required><br><br>
+
+  <label for="city">City:<span style="color:red">*</span></label><br>
+  <input type="text" id="city" name="City" required><br><br>
+
+  <label for="state">State:<span style="color:red">*</span></label><br>
+  <select id="state" name="State" required>
+    <option value="">Select State</option>
+    <option value="IND">Indonesia</option>
+    <option value="SG">Singapura</option>
+    <option value="MLY">Malaysia</option>
+    <option value="THAI">Thailand</option>
+    <option value="JP">Japan</option>
+    <!-- Tambahkan opsi untuk negara bagian lain di sini -->
+  </select><br><br>
+
+  <label for="zip">Zip Code:<span style="color:red">*</span></label><br>
+  <input type="text" id="zip" name="Zip" required><br><br>
+
+  <label for="telephone">Telephone:<span style="color:red">*</span></label><br>
+  <input type="tel" id="telephone" name="Telephone" required><br><br>
+
+  <label for="email">Email:<span style="color:red">*</span></label><br>
+  <input type="email" id="email" name="Email" required><br><br>
+
+  <label for="repeatemail">Repeat Email:<span style="color:red">*</span></label><br>
+  <input type="email" id="repeatemail" name="Repeat Email" required><br><br>
+
+  <label for="info">Information:</label><br>
+  <input type="checkbox" id="info" name="Information" value="Yes, I would like to receive lottery information via email.">
+  <label for="info">Yes, I would like to receive lottery information via email.</label><br><br>
+
+  <label for="ownership">Ownership:</label><br>
+  <input type="radio" id="ownership1" name="Ownership" value="The season ticket was purchased for yourself.">
+  <label for="ownership1">The season ticket was purchased for yourself.</label><br>
+  <input type="radio" id="ownership2" name="Ownership" value="The season ticket was purchased for someone else living at your address.">
+  <label for="ownership2">The season ticket was purchased for someone else living at your address.</label><br>
+  <input type="radio" id="ownership3" name="Ownership" value="he season ticket was purchased for someone not living at your address.">
+  <label for="ownership3">The season ticket was purchased for someone not living at your address.</label><br><br>
+
+  <input type="submit" value="Next" id="submitButton">
+  <input type="reset" value="Reset">
+</form>
+
+<!-- Container for carousel -->
+<div id="carousel-container"></div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

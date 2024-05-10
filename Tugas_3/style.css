@@ -1,0 +1,149 @@
+body {
+    background-image: linear-gradient(to bottom, #F2A0C0, #F2C87E); /* Gradient dari atas ke bawah */
+}
+
+.confirm-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom, #FFF1E4, #AB7261); /* Gradient dari atas ke bawah */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+}
+.confirm-buttons {
+    margin-top: 10px;
+    text-align: center; /* Pusatkan tombol */
+}
+
+.confirm-buttons button {
+    margin-right: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #AB7261, #F2C87E); /* Gradient dari atas ke bawah */
+    color: #fff; /* Warna teks */
+    border: none;
+    padding: 8px 16px; /* Padding tombol */
+    border-radius: 5px; /* Border radius tombol */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.confirm-buttons button:hover {
+    background-color: #F2C87E; /* Warna tombol saat hover */
+}
+
+.confirm-buttons button:last-child {
+    margin-right: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, #E7DBA9, #969D7B); /* Gradient dari atas ke bawah */
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Tambahkan curve pada kotak form */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Tambahkan curve pada kotak isian */
+    padding: 8px 12px;
+    width: calc(100% - 24px); /* Sesuaikan lebar dengan padding */
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block; /* Atur agar checkbox dan radio button berada dalam satu baris dengan teks */
+    vertical-align: middle; /* Posisikan checkbox dan radio button di tengah teks */
+    margin-right: 5px; /* Beri sedikit jarak dari teks */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    margin: 0 auto 10px;
+    background-color: #969D7B;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Atur jarak antar tombol */
+input[type="submit"] {
+    margin-right: 10px; /* Tambahkan margin-right */
+}
+
+/* Tombol reset tidak memiliki margin kanan */
+input[type="reset"] {
+    margin-right: 0; /* Hapus margin-right */
+}
+
+/* Hindari merubah desain untuk bagian checkbox dan radio button */
+
+
+h2 {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px;
+    padding: 10px; /* Tambahkan padding */
+}
+
+#carousel-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: hidden;
+}
+/* Tambahkan efek hover untuk tombol */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #AB7261; /* Warna tombol saat hover */
+}
+
+/* Atur posisi tombol di tengah */
+input[type="submit"],
+input[type="reset"] {
+    display: block; /* Membuat tombol menjadi blok */
+    margin: 0 auto 10px; /* Menengahkan tombol dan memberikan jarak 10px dari bawah */
+    background-color: #969D7B; /* Warna tombol */
+    color: #fff; /* Warna teks */
+    border: none;
+    padding: 8px 16px; /* Padding tombol */
+    border-radius: 5px; /* Border radius tombol */
+    transition: background-color 0.5s; /* Efek transisi saat hover */
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Atur jarak antar tombol */
+input[type="submit"] {
+    margin-right: center;
+}
+
+/* Tombol reset tidak memiliki margin kanan */
+input[type="reset"] {
+    margin-right: center;
+}
